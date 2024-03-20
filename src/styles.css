@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    margin: 50px auto;
+    padding: 52px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+  }
+  a{
+    text-decoration: none;
+  }
+  .file-info {
+    font-weight: bold;
+  }
+  h2 {
+    text-align: center;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  .file-upload {
+    background-color: #0075ff;
+    color: #fff;
+    border: none;
+    padding: 13px 32px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin: 21px auto;
+  }
+  .file-upload:hover {
+    background-color: #0056b3;
+  }
+  #file-label {
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+    background: #ffa600;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #file-label:hover {
+    background: rgb(255, 153, 0);
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    display: flex;
+  }
+  .image-container {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+  }
+  .image-container:hover {
+    transform: translateY(-5px);
+  }
+  .image-container img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .delete-button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .delete-button:hover {
+    background-color: #d13208;
+  }
+  .image{
+    width: 60px !important;
+  }
