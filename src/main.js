@@ -5,7 +5,7 @@ formImg.addEventListener("submit", async (e) => {
 
     const formData = new FormData(formImg)
 
-    const res = await fetch("http://localhost:3001/api/upload",{
+    const res = await fetch("http://svr.espaciosydisenos.com:3001/upload",{
         method: "POST",
         body: formData,
     });

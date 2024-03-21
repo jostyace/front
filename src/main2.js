@@ -1,7 +1,7 @@
 const imageContainer = document.getElementById('imageContainer');
 async function cargarImagenes() {
     try {
-      const response = await fetch('http://localhost:3001/api/imagenes');
+      const response = await fetch('http://svr.espaciosydisenos.com:3001/api/imagenes');
       if (!response.ok) {
         throw new Error('Error al cargar las imágenes');
       }
@@ -11,7 +11,7 @@ async function cargarImagenes() {
         const imageDiv = document.createElement('div');
         imageDiv.classList.add('image-container');
         const image = document.createElement('img');
-        image.src = 'http://localhost:3001/api/imagenes/' +imagen.file;
+        image.src = 'http://svr.espaciosydisenos.com:3001/api/imagenes/' +imagen.file;
         image.classList.add('image');
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Eliminar';
@@ -29,7 +29,7 @@ async function cargarImagenes() {
   }
    
 async function eliminarImagen(id) {
-   fetch('http://localhost:3001/api/imagenes/'+id, {
+   fetch('http://svr.espaciosydisenos.com:3001/api/imagenes/'+id, {
     method: 'DELETE'
   })
   cargarImagenes(); 
